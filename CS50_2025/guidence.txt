@@ -1,1 +1,7 @@
-Hi, welcome to begin CS50 in Harvard.
+<lecture>
+
+
+<作业>
+
+
+<其他>
