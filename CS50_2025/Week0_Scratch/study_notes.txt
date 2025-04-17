@@ -1,7 +1,3 @@
-<lecture>
+1. You maybe want to create a ingenious and spectacular project in Scratch, like terminal simulator(yes, it's me,hhh).But the homework requirement is simple, just create a simple project. Please don't spend many time.
 
-
-<作业>
-
-
-<其他>
+2. :) mean you pass this requirement, and :( mean you don't pass.

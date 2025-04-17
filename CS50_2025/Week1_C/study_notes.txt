@@ -1,0 +1,10 @@
+1. when you use 'style50 hello.c', style50 will tell you:
+(recommended)
+	#include<cs50.h>
+	#include<stdio.h>
+
+(discouraged)
+	#include<stdio.h>
+	#include<cs50.h>
+A:Because cs50.h is a custom head library, it may include functons(get_int(),get_string) that depend on standrad library stdio.h(like scanf()). If you put cs50.h in front of stdio.h, you may get some errors.
+	
