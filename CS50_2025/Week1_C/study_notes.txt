@@ -7,4 +7,11 @@
 	#include<stdio.h>
 	#include<cs50.h>
 A:Because cs50.h is a custom head library, it may include functons(get_int(),get_string) that depend on standrad library stdio.h(like scanf()). If you put cs50.h in front of stdio.h, you may get some errors.
-	
+
+2. if you do "credit" homework, I must remind you: Through my experiemnt, I find CS50's memory that is filled '\0' totally if the memory adress hasn't valid value.
+	so, if you want to check the card number whether is 16 digits, you should do :
+		if( digits[16]=='\0' && digits[15]!='\0')
+	rether than:
+		if( digits[16]=='\0')
+
+a number of 13 digits in cs50 memory is : 3 4 5 6 7 4 0 1 2 3 41 5 \0 \0 \0 .... \0(infinite \0)
