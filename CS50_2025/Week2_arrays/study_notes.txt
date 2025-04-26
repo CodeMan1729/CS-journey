@@ -1,2 +1,3 @@
 1. ';' isn't a completed sentence in English.
+2. Caution! There are other character from 'A' to 'z', like '[','\' and so on.
 
