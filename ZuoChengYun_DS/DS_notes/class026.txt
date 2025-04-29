@@ -1,0 +1,20 @@
+1. In C++, str1 == str2 that compare str1's VALUE to str2. &str1 == & str2 compare addresses. So explicit.
+   In java, str1 == str2 that compare str1's ADRESS to str2. using str1.equals(str2) to compare value.
+  Caution! Because `<<` have priority to '==', `==` operation must add brackets.
+
+2. `std::unordered_set`  Purpose: Stores unique elements (no duplicates) in no particular order.
+
+3.  `std::unordered_set` :  'set.end()' 并不指向最后一个元素，而是指向最后一个元素的下一个位（即"尾后"位）.
+---------  set.find(str1) != set.end() if return true, indicating no found.
+
+4. search 'map' to use key not value.
+
+5.cout << map[1]; will only print value
+
+6. in vector containor, emplace_back is suitable for complex data structure.
+
+7. std::set | non-duplicate element | basis of red-black tree | *** | ordered
+   std::map | non-duplicate element | basis of red-black tree | ele is std::pair | ascending order
+   std::priority_queue | duplicate element | ***  | *** | default max-heap
+  
+ 
