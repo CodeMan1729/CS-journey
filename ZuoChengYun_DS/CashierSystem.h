@@ -36,11 +36,3 @@ struct Food
 };
 
 
-int main()
-{
-  unordered_set<string> f = {"pizza", "vegetable"};
-  Person p("Bob", 10000, 10, true, f);
-
-  cout << p.cash << '\n';
-}
-

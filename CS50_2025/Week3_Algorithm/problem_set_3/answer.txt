@@ -1,0 +1,13 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The feature of bubble sort is when numbers is
+sorted, complexity decrease into O(n).
+
+sort2 uses: Merge Sort
+
+How do you know?: When capacity of numbers is huge, merge sort is fastest
+among these algorithms.
+
+sort3 uses: Selection Sort
+
+How do you know?: Selction sort's runtime isn't vary intensively with input order.
