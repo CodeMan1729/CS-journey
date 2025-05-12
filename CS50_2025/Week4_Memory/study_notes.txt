@@ -1,0 +1,18 @@
+1. 
+	uint16_t array[30];
+In this condition, `array + 3` = array + 3 * sizeof(array), which will exceed array's bound. 
+
+`array + 3 * sizeof(uint16_t)` will shift pointer on fourth element.
+
+2. FILE *pointer is opaque and non-arithmetic ! 
+   FILE *pointer can automatically move, making up for non-arithmetic lackness.
+
+   Normal pointer can do arithmetic operations.
+   Normal pointer cannot automatically move ! You are right, mannnnnnn~~~~~~~~~~~
+
+
+3. If a `int` and `double`/`float` do operation, 
+you should type conversion:
+	int a = 3;
+	float b = 0.5;
+	(double) a * b is correct. Don't convert (int) b .
