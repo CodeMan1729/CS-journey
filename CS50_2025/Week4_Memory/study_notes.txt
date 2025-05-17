@@ -16,3 +16,35 @@ you should type conversion:
 	int a = 3;
 	float b = 0.5;
 	(double) a * b is correct. Don't convert (int) b .
+
+4. Why not use this method to represent color picture?
+Description: I use 1 byte to represent the color of pixel. To represent more colors, we use hexadecimal.
+
+------------
+But 16/3 is not a intergal, we cannot divide three colors equally. And another vague problem is 5^8 << 256^3.
+
+5. 3 bytes represent a color pixel.
+
+6. How to create a "grayscale" filter
+(1) As long as red, green , blue values are all equal, the color will be varied into grayscale.
+(2) get value of three color's average.
+
+7. How to create a "reflection" filter
+picture is formed by triple color(struct) array, so I just reverse it.
+
+8. Each time I re-operate some variables(like int average), reset it to avoid contaminating the next loop;
+
+	// calculate ten different contries' income average
+	int average;
+	for(int i = 0; i < 10; i++)
+	{
+		//..... take one of contries' average value
+		average = 0;
+	}
+
+If have operation of assigning the value to 3, I don't need to `average = 0;`
+
+9. type conversion(double --> int)
+Intention of accurate value, we use round() function:
+	double origin = 3.14;
+
