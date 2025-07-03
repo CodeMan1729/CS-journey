@@ -1,0 +1,37 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// 位图这样记录的：31~0 63~32 95~64
+class BitSet
+{
+private:
+    int n;
+    vector<int> set;
+public:
+    // 显示0~n-1一共n个数的存在情况
+    // 需要有几个int：n个/32 向上取整
+    // 是第x个int的第几位：j % 32
+    BitSet(int m) : n(m), set((n + 31) / 32, 0) { }
+
+    void add(int num) // we need 1-->1  0-->1
+    {
+        set[num / 32] |= (1 << (num % 32));
+    }
+
+    void remove(int num) // we need 1-->0  0-->0
+    {
+        set[num / 32] &= ~(1 << (num % 32));
+    }
+
+    void reverse(int num)  // we need 1-->0  0-->1
+    {
+        set[num / 32] ^= (1 << (num % 32));
+    }
+
+    bool contain(int num)
+    {
+        return (set[num / 32] >> (num % 32)) & 1 == 1;
+    }
+};
