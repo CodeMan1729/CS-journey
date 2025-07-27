@@ -1,0 +1,37 @@
+描述: 建立一颗三代的血型等位基因遗传树。这里采用的等位基因是血型。控制血型的一共有三种基因: A, B, O  
+
+程序功能: 生成祖辈，父辈，子辈三代的血型等位基因遗传的树状图谱。
+
+祖辈的4个人的等位基因将会随机生成。
+遗传给下一代时，父母双方将随机的取一个等位基因遗传给下一代。
+
+使用方法: 
+只需每次不断运行程序，每次运行程序便可随机的生成一颗遗传树。
+程序结果用图就看懂了。
+
+假设结果是这样: 
+Child (Generation 0): blood type BA
+	Parent (Generation 1): blood type BB
+		Grandparent (Generation 2): blood type BO
+		Grandparent (Generation 2): blood type BA
+	Parent (Generation 1): blood type AO
+		Grandparent (Generation 2): blood type AB
+		Grandparent (Generation 2): blood type OO
+
+那么遗传图谱为：
+AB     OO                       BO     BA
+  \    /                        \      /
+    AO                              BB
+        \                           /
+                     BA
+
+改进思路：
+可以遗传多个等位基因，模拟孟德尔实验，只需修改`struct person`和相关遗传操作即可
+想要生成任意n代，可能要对代码进行大规模改动，功能暂不支持。
+
+
+
+
+
+
+
