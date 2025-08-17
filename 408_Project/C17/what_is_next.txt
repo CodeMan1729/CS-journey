@@ -1,0 +1,6 @@
+1. add do-while to play with self-compiling
+
+2. Why my c17 cannot print any inforamtion to assembly file? He
+lp me!
+~
+~
